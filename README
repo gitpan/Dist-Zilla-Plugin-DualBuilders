@@ -1,0 +1,92 @@
+NAME
+    Dist::Zilla::Plugin::DualBuilders - Allows use of Module::Build and
+    ExtUtils::MakeMaker in a dzil dist
+
+DESCRIPTION
+    This plugin allows you to specify ModuleBuild and MakeMaker in your
+    Dist::Zilla dist.ini and select only one as your prereq. Normally, if
+    this plugin is not loaded you will end up with both in your prereq list
+    and this is obviously not what you want!
+
+            # In your dist.ini:
+            [ModuleBuild]
+            [MakeMaker] ; or [MakeMaker::Awesome], will work too :)
+            [DualBuilders] ; needs to be specified *AFTER* the builders
+
+    This plugin accepts the following options:
+
+    *   prefer
+
+        Sets your preferred builder. This builder will be the one added to
+        the prereqs. Valid options are: "make" or "build".
+
+        The default is: build
+
+SEE ALSO
+    Dist::Zilla
+
+SUPPORT
+    You can find documentation for this module with the perldoc command.
+
+            perldoc Dist::Zilla::Plugin::DualBuilders
+
+  Websites
+    *   Search CPAN
+
+        <http://search.cpan.org/dist/Dist-Zilla-Plugin-DualBuilders>
+
+    *   AnnoCPAN: Annotated CPAN documentation
+
+        <http://annocpan.org/dist/Dist-Zilla-Plugin-DualBuilders>
+
+    *   CPAN Ratings
+
+        <http://cpanratings.perl.org/d/Dist-Zilla-Plugin-DualBuilders>
+
+    *   CPAN Forum
+
+        <http://cpanforum.com/dist/Dist-Zilla-Plugin-DualBuilders>
+
+    *   RT: CPAN's Request Tracker
+
+        <http://rt.cpan.org/NoAuth/Bugs.html?Dist=Dist-Zilla-Plugin-DualBuil
+        ders>
+
+    *   CPANTS Kwalitee
+
+        <http://cpants.perl.org/dist/overview/Dist-Zilla-Plugin-DualBuilders
+        >
+
+    *   CPAN Testers Results
+
+        <http://cpantesters.org/distro/D/Dist-Zilla-Plugin-DualBuilders.html
+        >
+
+    *   CPAN Testers Matrix
+
+        <http://matrix.cpantesters.org/?dist=Dist-Zilla-Plugin-DualBuilders>
+
+    *   Git Source Code Repository
+
+        <http://github.com/apocalypse/perl-dist-zilla-plugin-dualbuilders>
+
+  Bugs
+    Please report any bugs or feature requests to
+    "bug-dist-zilla-plugin-dualbuilders at rt.cpan.org", or through the web
+    interface at
+    <http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Dist-Zilla-Plugin-DualBu
+    ilders>. I will be notified, and then you'll automatically be notified
+    of progress on your bug as I make changes.
+
+AUTHOR
+    Apocalypse <apocal@cpan.org>
+
+COPYRIGHT AND LICENSE
+    Copyright 2010 by Apocalypse
+
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
+    The full text of the license can be found in the LICENSE file included
+    with this module.
+
