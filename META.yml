@@ -16,10 +16,10 @@ name: Dist-Zilla-Plugin-DualBuilders
 provides:
   Dist::Zilla::Plugin::DualBuilders:
     file: lib/Dist/Zilla/Plugin/DualBuilders.pm
-    version: 0.02
+    version: 0.03
 requires:
-  Dist::Zilla::Role::InstallTool: 2.101170
-  Dist::Zilla::Role::PrereqSource: 2.101170
+  Dist::Zilla::Role::InstallTool: 3.101461
+  Dist::Zilla::Role::PrereqSource: 3.101461
   Moose: 1.01
   Moose::Util::TypeConstraints: 1.01
   perl: 5.008
@@ -28,4 +28,4 @@ resources:
   homepage: http://search.cpan.org/dist/Dist-Zilla-Plugin-DualBuilders
   license: http://dev.perl.org/licenses/
   repository: http://github.com/apocalypse/perl-dist-zilla-plugin-dualbuilders
-version: 0.02
+version: 0.03

@@ -6,8 +6,8 @@ WriteMakefile
           'NAME' => 'Dist::Zilla::Plugin::DualBuilders',
           'VERSION_FROM' => 'lib/Dist/Zilla/Plugin/DualBuilders.pm',
           'PREREQ_PM' => {
-                           'Dist::Zilla::Role::InstallTool' => '2.101170',
-                           'Dist::Zilla::Role::PrereqSource' => '2.101170',
+                           'Dist::Zilla::Role::InstallTool' => '3.101461',
+                           'Dist::Zilla::Role::PrereqSource' => '3.101461',
                            'Moose' => '1.01',
                            'Moose::Util::TypeConstraints' => '1.01',
                            'Test::More' => '0.94'
