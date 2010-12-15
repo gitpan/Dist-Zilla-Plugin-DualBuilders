@@ -20,12 +20,13 @@ my %module_build_args = (
     'Apocalypse <APOCAL@cpan.org>'
   ],
   'dist_name' => 'Dist-Zilla-Plugin-DualBuilders',
-  'dist_version' => '1.000',
+  'dist_version' => '1.001',
   'license' => 'perl',
   'module_name' => 'Dist::Zilla::Plugin::DualBuilders',
   'recommends' => {},
   'recursive_test_files' => 1,
   'requires' => {
+    'Dist::Zilla::Role::AfterBuild' => '3.101461',
     'Dist::Zilla::Role::InstallTool' => '3.101461',
     'Dist::Zilla::Role::PrereqSource' => '3.101461',
     'Moose' => '1.03',

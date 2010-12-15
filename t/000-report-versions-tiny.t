@@ -48,6 +48,7 @@ sub pmver {
     return sprintf('%-45s => %-10s%-15s%s', $module, $pmver, $wanted, "\n");
 }
 
+eval { $v .= pmver('Dist::Zilla::Role::AfterBuild','3.101461') };
 eval { $v .= pmver('Dist::Zilla::Role::InstallTool','3.101461') };
 eval { $v .= pmver('Dist::Zilla::Role::PrereqSource','3.101461') };
 eval { $v .= pmver('File::Find','any version') };

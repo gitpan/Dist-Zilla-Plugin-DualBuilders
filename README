@@ -3,13 +3,14 @@ NAME
     ExtUtils::MakeMaker in a dzil dist
 
 VERSION
-      This document describes v1.000 of Dist::Zilla::Plugin::DualBuilders - released December 13, 2010 as part of Dist-Zilla-Plugin-DualBuilders.
+      This document describes v1.001 of Dist::Zilla::Plugin::DualBuilders - released December 15, 2010 as part of Dist-Zilla-Plugin-DualBuilders.
 
 DESCRIPTION
     This plugin allows you to specify ModuleBuild and MakeMaker in your
     Dist::Zilla dist.ini and select only one as your prereq. Normally, if
     this plugin is not loaded you will end up with both in your prereq list
-    and this is obviously not what you want!
+    and this is obviously not what you want! Also, this will block both
+    builders from running the testsuite twice.
 
             # In your dist.ini:
             [ModuleBuild]
@@ -22,6 +23,14 @@ ATTRIBUTES
     prereqs. Valid options are: "make" or "build".
 
     The default is: build
+
+  block_test
+    This is a boolean value determining if we will block both testers from
+    running the testsuite. If you have both builders loaded, you will run
+    the testsuite twice! If you want this behavior, please set this value to
+    false.
+
+    The default is: true
 
 SEE ALSO
     Please see those modules/websites for more information related to this

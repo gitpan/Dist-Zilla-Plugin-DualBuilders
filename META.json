@@ -32,6 +32,7 @@
       },
       "runtime" : {
          "requires" : {
+            "Dist::Zilla::Role::AfterBuild" : "3.101461",
             "Dist::Zilla::Role::InstallTool" : "3.101461",
             "Dist::Zilla::Role::PrereqSource" : "3.101461",
             "Moose" : "1.03",
@@ -50,7 +51,7 @@
    "provides" : {
       "Dist::Zilla::Plugin::DualBuilders" : {
          "file" : "lib/Dist/Zilla/Plugin/DualBuilders.pm",
-         "version" : "1.000"
+         "version" : "1.001"
       }
    },
    "release_status" : "stable",
@@ -69,9 +70,10 @@
          "web" : "http://github.com/apocalypse/perl-dist-zilla-plugin-dualbuilders"
       }
    },
-   "version" : "1.000",
+   "version" : "1.001",
    "x_BuiltWith" : {
       "modules" : {
+         "Dist::Zilla::Role::AfterBuild" : "4.102345",
          "Dist::Zilla::Role::InstallTool" : "4.102345",
          "Dist::Zilla::Role::PrereqSource" : "4.102345",
          "File::Find" : "1.12",
@@ -248,7 +250,7 @@
          {
             "class" : "Dist::Zilla::Plugin::DualBuilders",
             "name" : "@Apocalyptic/DualBuilders",
-            "version" : "0.03"
+            "version" : "1.000"
          },
          {
             "class" : "Dist::Zilla::Plugin::MetaYAML",

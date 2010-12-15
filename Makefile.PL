@@ -25,12 +25,13 @@ my %WriteMakefileArgs = (
   'LICENSE' => 'perl',
   'NAME' => 'Dist::Zilla::Plugin::DualBuilders',
   'PREREQ_PM' => {
+    'Dist::Zilla::Role::AfterBuild' => '3.101461',
     'Dist::Zilla::Role::InstallTool' => '3.101461',
     'Dist::Zilla::Role::PrereqSource' => '3.101461',
     'Moose' => '1.03',
     'Moose::Util::TypeConstraints' => '1.01'
   },
-  'VERSION' => '1.000',
+  'VERSION' => '1.001',
   'test' => {
     'TESTS' => 't/*.t'
   }
