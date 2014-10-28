@@ -1,4 +1,4 @@
-# Added by Dist::Zilla::PluginBundle::Apocalyptic v0.001
+# Added by Dist::Zilla::PluginBundle::Apocalyptic v0.005
 
 # skip Eclipse IDE stuff
 \.includepath$
@@ -12,6 +12,9 @@
 \B\.svn\b
 \B\.git\b
 ^\.gitignore$
+
+# Ignore Dist::Zilla's build dir
+^\.build/
 
 # Avoid configuration metadata file
 ^MYMETA\.
